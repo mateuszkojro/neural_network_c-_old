@@ -2,16 +2,20 @@
 #include <iostream>
 int main() {
 
-  const int size = 2;
+    const int size = 2;
 
-  matrix a(size, size);
-  matrix b(size, size);
-  matrix c(size, size);
-  double var[size * size] = {1, 2, 3, 4};
-  a.init(var, 4);
+    matrix a(size, size);
+    matrix b(size, size);
+    matrix c(size, size);
 
-  c = add(a, b);
-  a.show();
-  c.show();
-  return 0;
+    double var[size * size] = {1, 2, 3, 4};
+
+    b.init(var, size * size);
+    a.init(var, size * size);
+
+    c = add(a, b);
+    a.show();
+    c.show();
+
+    return 0;
 }

@@ -16,3 +16,9 @@ matrix.h
 iostream
 -
 
+/home/mateusz/workspace/neural_network_c++/src/matrix.cpp
+matrix.h
+/home/mateusz/workspace/neural_network_c++/src/matrix.h
+iostream
+-
+

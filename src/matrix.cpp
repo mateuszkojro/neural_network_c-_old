@@ -3,13 +3,13 @@
 // TODO sprawdzic czy wzor dobrze dziala
 
 //FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do macierzy
-int matrix::a(int x, int y) { return y * matrix::size_x + x; }
+int matrix::a(int x, int y) { return (y * matrix::size_x) + x; }
 void matrix::show(){
     for (int x = 0; x < matrix::size_x; x++) {
     for (int y = 0; y < matrix::size_y; y++) {
        std::cout << matrix::tab[matrix::a(x,y)];
     }
-    std::cout << std::endl;
+    std::cout << std::endl; 
   }
 }
 

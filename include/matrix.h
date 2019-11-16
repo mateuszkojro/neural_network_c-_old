@@ -2,20 +2,20 @@
 #include <deque>
 
 class matrix {
-public:
+ public:
   int size_x;
   int size_y;
-  double *tab;
+  double* tab;
   int a(int x, int y);
   void show();
-  void init(double *tab,int size);
+  void init(double* tab, int size);
   matrix(int x, int y) {
     size_x = x;
     size_y = y;
     tab = new double[x * y];
   }
 
-private:
+ private:
 };
 
 matrix add(matrix a, matrix b);
