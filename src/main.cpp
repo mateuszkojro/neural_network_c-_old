@@ -1,4 +1,5 @@
 #include "matrix.h"
+#include "toolchest.h"
 #include <iostream>
 int main() {
 
@@ -10,8 +11,9 @@ int main() {
 
     double var[size * size] = {1, 2, 3, 4, 4, 4, 4, 4, 4};
 
-    b.init(var, size * size);
     a.init(var, size * size);
+
+    toolchest::fill_i(b.tab,size*size);
 
     c = add(a, b);
 
