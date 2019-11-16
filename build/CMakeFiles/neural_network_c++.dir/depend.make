@@ -4,3 +4,6 @@
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../include/matrix.h
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../src/main.cpp
 
+CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o: ../include/matrix.h
+CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o: ../src/matrix.cpp
+
