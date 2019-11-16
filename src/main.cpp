@@ -14,7 +14,9 @@ int main() {
     a.init(var, size * size);
 
     c = add(a, b);
+
     a.show();
+    b.show();
     c.show();
 
     return 0;
