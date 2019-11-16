@@ -1,12 +1,22 @@
 #include "matrix.h"
+#include <cmath>
+#include <iomanip>
 #include <iostream>
 // TODO sprawdzic czy wzor dobrze dziala
 int convert(int x, int y, int size_x) { return (y * size_x) + x; }
+
+//TODO adress jest zle zdeklarowny i zawsze zwraca 0
 int adress(int x, int y) { return 0; }
 // FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do
 // macierzy
 double matrix::index(int x, int y) {
     return matrix::tab[convert(x, y, matrix::size_x)];
+}
+
+void matrix::apply_function(double (*func)(double)) {
+    for (int i = 0; i < matrix::size_x * matrix::size_y; i++) {
+        matrix::tab[i] = func(matrix::tab[i]);
+    }
 }
 void matrix::show() {
     for (int i = 0; i < matrix::size_x * 2 + 1; i++) {
@@ -15,7 +25,7 @@ void matrix::show() {
     std::cout << std::endl;
     for (int x = 0; x < matrix::size_x; x++) {
         for (int y = 0; y < matrix::size_y; y++) {
-            std::cout << "|" << matrix::index(x, y);
+            std::cout << "|" << std::setprecision(3) << matrix::index(x, y);
         }
         std::cout << "|" << std::endl;
     }

@@ -13,13 +13,12 @@ int main() {
 
     a.init(var, size * size);
 
-    toolchest::fill_i(b.tab,size*size);
-
-    c = add(a, b);
+    toolchest::fill_i(a.tab,size*size);
 
     a.show();
-    b.show();
-    c.show();
 
+    a.apply_function(toolchest::sigmoid);
+
+    a.show();
     return 0;
 }

@@ -11,6 +11,7 @@ class matrix {
     void show();
     void init(double *tab, int size);
     double operator[](int adress);
+    void apply_function(double (*func)(double));
     // int operator * (const int&  adressX ,const int& adressY );
     matrix(int x, int y) {
         size_x = x;
