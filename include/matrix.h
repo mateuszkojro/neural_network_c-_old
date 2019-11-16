@@ -2,16 +2,16 @@
 #include <deque>
 
 class matrix {
-  matrix(int size_x, int size_y, double *input_tab) {
-    x = size_x;
-    y = size_y;
+  matrix(int x, int y) {
+    size_x = x;
+    size_y = y;
     *tab = new double [x * y];
   }
 
 private:
 public:
-  int x;
-  int y;
+  int size_x;
+  int size_y;
   double **tab;
   int a(int x, int y);
 };
