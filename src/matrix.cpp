@@ -5,7 +5,7 @@
 // TODO sprawdzic czy wzor dobrze dziala
 int convert(int x, int y, int size_x) { return (y * size_x) + x; }
 
-//TODO adress jest zle zdeklarowny i zawsze zwraca 0
+// TODO adress jest zle zdeklarowny i zawsze zwraca 0
 int adress(int x, int y) { return 0; }
 // FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do
 // macierzy
@@ -60,4 +60,12 @@ void matrix::init(double *tab, int size) {
 }
 
 // TODO multiply matrix by vector
-matrix dot_product(matrix a, matrix b) { return a; }
+matrix dot_product(matrix a, matrix b) {
+    matrix wynik(a.size_x, a.size_y);
+
+    for (int x = 0; x < a.size_x; x++) {
+        for (int y = 0; y < a.size_x; y++) {
+        }
+    }
+    return a;
+}

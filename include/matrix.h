@@ -6,9 +6,11 @@ class matrix {
     int size_x;
     int size_y;
     double *tab;
+
+    void show();
     int adress(int x, int y);
     double index(int x, int y);
-    void show();
+
     void init(double *tab, int size);
     double operator[](int adress);
     void apply_function(double (*func)(double));
