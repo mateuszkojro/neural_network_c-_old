@@ -71,7 +71,7 @@ matrix multiply(matrix a, matrix b) {
         for (int y = 0; y < a.size_x; y++) {
             for (int z = 0; z < b.size_x; z++) {
                 //std::cout << convert(x, z, a.size_x * a.size_y) << std::endl;
-                wynik.tab[convert(x, z, a.size_x )] +=  a.index(x,z) * b.index(z,y);
+                wynik.tab[convert(x, y, a.size_x )] +=  a.index(x,z) * b.index(z,y);
             }
         }
     }

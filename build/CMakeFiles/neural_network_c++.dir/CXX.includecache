@@ -10,15 +10,13 @@
 deque
 -
 
-../include/toolchest.h
-cmath
--
-
-/home/mateusz/workspace/neural_network_c++/src/main.cpp
+/home/mateusz/workspace/neural_network_c++/src/matrix.cpp
 matrix.h
 /home/mateusz/workspace/neural_network_c++/src/matrix.h
-toolchest.h
-/home/mateusz/workspace/neural_network_c++/src/toolchest.h
+cmath
+-
+iomanip
+-
 iostream
 -
 
