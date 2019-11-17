@@ -9,9 +9,9 @@ int main() {
     matrix b(size, size);
     matrix c(size, size);
 
-    double var[size * size] = {1, 2, 3, 4, 4, 4, 4, 4, 4};
+    //double var[size * size] = {1, 2, 3, 4, 4, 4, 4, 4, 4};
 
-    a.init(var, size * size);
+    // a.init(var, size * size);
 
     toolchest::fill_i(a.tab,size*size);
 
