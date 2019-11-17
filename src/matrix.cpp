@@ -11,6 +11,8 @@ int convert(int x, int y, int size_x) { return (y * size_x) + x; }
 int adress(int x, int y) { return 0; }
 // FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do
 // macierzy
+
+//TODO dodac ograniczenie wychodzenia poza zakres
 double matrix::index(int x, int y) {
     return matrix::tab[convert(x, y, matrix::size_x)];
 }
@@ -20,7 +22,7 @@ void matrix::apply_function(double (*func)(double)) {
         matrix::tab[i] = func(matrix::tab[i]);
     }
 }
-void matrix::show() {
+void matrix::show() { 
     for (int i = 0; i < matrix::size_x * 2 + 1; i++) {
         std::cout << "-";
     }
@@ -66,9 +68,10 @@ matrix multiply(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
     // TODO przepisane od drabika nie sprawdzone czy nie zrobilem bledu przy przepisywaniu
     for (int x = 0; x < a.size_x; x++) {
-        for (int y = 0; y < a.size_y; y++) {
+        for (int y = 0; y < a.size_x; y++) {
             for (int z = 0; z < b.size_x; z++) {
-                wynik.tab[convert(x, z, a.size_y * a.size_y)] +=  a.index(x,z) * b.index(z,y);
+                //std::cout << convert(x, z, a.size_x * a.size_y) << std::endl;
+                wynik.tab[convert(x, z, a.size_x )] +=  a.index(x,z) * b.index(z,y);
             }
         }
     }
