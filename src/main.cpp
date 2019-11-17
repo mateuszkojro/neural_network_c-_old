@@ -15,10 +15,8 @@ int main() {
 
     toolchest::fill_i(a.tab,size*size);
 
-    a.show();
+    c = dot_product(a,b);
 
-    a.apply_function(toolchest::sigmoid);
-
-    a.show();
+    c.show();
     return 0;
 }

@@ -62,10 +62,11 @@ void matrix::init(double *tab, int size) {
 // TODO multiply matrix by vector
 matrix dot_product(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
-
+//TODO to nie jest poprawny adres dot product 
     for (int x = 0; x < a.size_x; x++) {
-        for (int y = 0; y < a.size_x; y++) {
+        for (int y = 0; y < a.size_y; y++) {
+            wynik.tab[convert(x,y,a.size_y*a.size_y)] = 4;
         }
     }
-    return a;
+    return wynik;
 }
