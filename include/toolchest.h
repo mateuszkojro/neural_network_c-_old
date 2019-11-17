@@ -13,4 +13,5 @@ void fill_i(t *tab, int size) {
 
 double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
 
+
 } // namespace toolchest

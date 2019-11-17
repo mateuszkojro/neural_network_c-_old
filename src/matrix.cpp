@@ -62,12 +62,14 @@ void matrix::init(double *tab, int size) {
 }
 
 
-matrix dot_product(matrix a, matrix b) {
+matrix multiply(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
-//TODO to nie jest poprawny sposb na liczenie dot product 
+    // TODO przepisane od drabika nie sprawdzone czy nie zrobilem bledu przy przepisywaniu
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
-            wynik.tab[convert(x,y,a.size_y*a.size_y)] = 4;
+            for (int z = 0; z < b.size_x; z++) {
+                wynik.tab[convert(x, z, a.size_y * a.size_y)] +=  a.index(x,z) * b.index(z,y);
+            }
         }
     }
     return wynik;

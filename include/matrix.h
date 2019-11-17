@@ -26,4 +26,4 @@ class matrix {
 
 matrix add(matrix a, matrix b);
 matrix sub(matrix a, matrix b);
-matrix dot_product(matrix a, matrix b);
+matrix multiply(matrix a, matrix b);

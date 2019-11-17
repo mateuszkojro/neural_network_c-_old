@@ -1,6 +1,7 @@
 #include "matrix.h"
 #include "toolchest.h"
 #include <iostream>
+
 int main() {
 
     const int size = 3;
@@ -14,8 +15,9 @@ int main() {
     // a.init(var, size * size);
 
     toolchest::fill_i(a.tab,size*size);
+    toolchest::fill_i(b.tab,size*size);
 
-    c = dot_product(a,b);
+    c = multiply(a,b);
 
     c.show();
     return 0;
