@@ -123,6 +123,33 @@ neural_network_c++/fast:
 	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/build
 .PHONY : neural_network_c++/fast
 
+lib/simple.o: lib/simple.cpp.o
+
+.PHONY : lib/simple.o
+
+# target to build an object file
+lib/simple.cpp.o:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o
+.PHONY : lib/simple.cpp.o
+
+lib/simple.i: lib/simple.cpp.i
+
+.PHONY : lib/simple.i
+
+# target to preprocess a source file
+lib/simple.cpp.i:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/lib/simple.cpp.i
+.PHONY : lib/simple.cpp.i
+
+lib/simple.s: lib/simple.cpp.s
+
+.PHONY : lib/simple.s
+
+# target to generate assembly for a file
+lib/simple.cpp.s:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/lib/simple.cpp.s
+.PHONY : lib/simple.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... neural_network_c++"
 	@echo "... edit_cache"
+	@echo "... lib/simple.o"
+	@echo "... lib/simple.i"
+	@echo "... lib/simple.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

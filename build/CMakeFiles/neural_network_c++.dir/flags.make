@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mateusz/workspace/neural_network_c++/include -I/home/mateusz/workspace/neural_network_c++ 
+CXX_INCLUDES = -I/home/mateusz/workspace/neural_network_c++/include -I/home/mateusz/workspace/neural_network_c++ -I/home/mateusz/workspace/neural_network_c++/lib 
 

@@ -4,25 +4,36 @@
 
 int main() {
 
+
+    const int n_layers = 5;
     const int size = 3;
 
-    matrix a(size, size);
-    matrix b(size, size);
-    matrix c(size, size);
+    // number of neurons in layer is detrmined in default constructor for a
+    // matrix class
+    matrix neurons[n_layers];
+    matrix weights[n_layers];
+    matrix biases[n_layers];
+    double var[9] = {1,2,3,0,0,0,0,0,0};
+    for (int i = 0; i < n_layers; ++i) {
+        neurons[i].tab = var;
+        toolchest::fill_random_double(weights[i].tab, size * size);
+        toolchest::fill_random_double(biases[i].tab, size * size);
+    }
+    matrix a;
+    matrix b;
+    matrix c;
 
-    double var[size * size] = {0};
+    toolchest::fill_random_double(a.tab, size * size);
+    toolchest::fill_random_double(b.tab, size * size);
 
-    c.init(var, size * size);
+    c = multiply(a, b);
 
-    toolchest::fill_i(a.tab,size*size);
-    toolchest::fill_i(b.tab,size*size);
-    //toolchest::fill_i(c.tab,size*size);
+    for (int i = 1; i < n_layers; ++i) {
+        // neurons[i] = multiply(weights[i-1],neurons[i-1]);
+        neurons[i] = add(biases[i - 1], neurons[i - 1]);
+    }
 
-    b.show();
-
-    c = multiply(a,b);
-
-    c.show();
-
-    return 0;
-}
+    neurons[0].show();
+    weights[0].show();
+    biases[0].show();
+    }

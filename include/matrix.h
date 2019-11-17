@@ -15,7 +15,7 @@ class matrix {
     double operator[](int adress);
     void apply_function(double (*func)(double));
     // int operator * (const int&  adressX ,const int& adressY );
-    matrix(int x, int y) {
+    matrix(int x=3, int y=3) {
         size_x = x;
         size_y = y;
         tab = new double[x * y];

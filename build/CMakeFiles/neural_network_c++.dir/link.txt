@@ -1,1 +1,1 @@
-g++  -g  -rdynamic CMakeFiles/neural_network_c++.dir/src/main.cpp.o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o  -o neural_network_c++ 
+g++  -g  -rdynamic CMakeFiles/neural_network_c++.dir/src/main.cpp.o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o  -o neural_network_c++ 
