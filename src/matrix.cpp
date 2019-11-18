@@ -5,20 +5,19 @@
 #include <iostream>
 
 
-// TODO sprawdzic czy wzor dobrze dziala
 int convert(int x, int y, int size_x) { return (y * size_x) + x; }
 
 // TODO adress jest zle zdeklarowny i zawsze zwraca 0
 int adress(int x, int y) { return 0; }
-// FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do
-// macierzy
 
-// TODO dodac ograniczenie wychodzenia poza zakres
+
+// TODO poprawic wyrzucanay wyjatek
 double matrix::index(int x, int y) {
     if (matrix::size_l > convert(x, y, matrix::size_x)) {
         return matrix::tab[convert(x, y, matrix::size_x)];
     } else {
-        std::cout <<"!!!!"<< convert(x,y,matrix::size_x) << " is out of index range !!!!!";
+        std::cout << "!!!!" << convert(x, y, matrix::size_x)
+                  << " is out of index range !!!!!";
         throw "badd memory index";
         return 0;
     }
@@ -46,6 +45,8 @@ void matrix::show() {
     std::cout << std::endl;
 }
 /*
+Przeciazenie operatorw dodawania i odejmowania 
+
 int matrix::operator *(const int& adressX,const int& adressY){
   return adressY * matrix::size_x + adressX;
 }
@@ -70,15 +71,12 @@ void matrix::init(double *tab, int size) {
     }
 }
 
-
+//TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor
 matrix multiply(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
-    // TODO przepisane od drabika nie sprawdzone czy nie zrobilem bledu przy
-    // przepisywaniu
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_x; y++) {
             for (int z = 0; z < b.size_x; z++) {
-                // std::cout << convert(x, z, a.size_x * a.size_y) << std::endl;
                 wynik.tab[convert(x, y, a.size_x)] +=
                     a.index(x, z) * b.index(z, y);
             }

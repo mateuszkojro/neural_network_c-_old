@@ -22,6 +22,9 @@ int main() {
     matrix a;
     matrix b;
     matrix c;
+
+
+    
     
     #if 0
     toolchest::fill_random_double(a.tab, size * size);
@@ -30,13 +33,9 @@ int main() {
     c = multiply(a, b);
     #endif 
 
-    for (int i = 1; i < n_layers; ++i) {
-        // neurons[i] = multiply(weights[i-1],neurons[i-1]);
-        neurons[i] = add(biases[i - 1], neurons[i - 1]);
-        neurons[i].apply_function(toolchest::sigmoid);
-    }
+
 
     neurons[n_layers -1 ].show();
     weights[0].show();
-    biases[0].index(100,100);
+    biases[0].show();
     }

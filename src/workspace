@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "/home/mateusz/workspace/neural_network_c++"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdexcept": "cpp"
+		}
+	}
+}
