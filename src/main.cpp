@@ -13,11 +13,11 @@ int main() {
     matrix neurons[n_layers];
     matrix weights[n_layers];
     matrix biases[n_layers];
-    double var[9] = {1,2,3,0,0,0,0,0,0};
+    double var[9] = {1,1,0,0,0,0,0,0,0};
     for (int i = 0; i < n_layers; ++i) {
         neurons[i].tab = var;
         toolchest::fill_random_double(weights[i].tab, size * size);
-        toolchest::fill_random_double(biases[i].tab, size * size);
+        toolchest::fill_random_int(biases[i].tab, size * size);
     }
     matrix a;
     matrix b;
@@ -31,9 +31,10 @@ int main() {
     for (int i = 1; i < n_layers; ++i) {
         // neurons[i] = multiply(weights[i-1],neurons[i-1]);
         neurons[i] = add(biases[i - 1], neurons[i - 1]);
+        neurons[i].apply_function(toolchest::sigmoid);
     }
 
-    neurons[0].show();
+    neurons[n_layers -1 ].show();
     weights[0].show();
     biases[0].show();
     }

@@ -12,9 +12,21 @@ void fill_i(t *tab, int size) {
     }
 }
 template <typename t>
-void fill_random_double(t *tab,int size){
+void fill_random_int(t *tab,int size){
     for(int i = 0; i < size;i++){
         tab[i] = double(simple::random(1,9));
+    }
+}
+template <typename t>
+void fill_random_bool(t *tab,int size){
+    for(int i = 0; i < size;i++){
+        tab[i] = double(simple::random(0,1));
+    }
+}
+template <typename t>
+void fill_random_double(t *tab,int size){
+    for(int i = 0; i < size;i++){
+        tab[i] = double(simple::random(-9,9)) / double(simple::random(10,30));
     }
 }
 
