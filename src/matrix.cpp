@@ -1,5 +1,6 @@
 #include "matrix.h"
 #include <cmath>
+#include <exception>
 #include <iomanip>
 #include <iostream>
 
@@ -12,9 +13,15 @@ int adress(int x, int y) { return 0; }
 // FIXME   nie poprawny wzor ew blad wyswietlania lub zapisywania danych do
 // macierzy
 
-//TODO dodac ograniczenie wychodzenia poza zakres
+// TODO dodac ograniczenie wychodzenia poza zakres
 double matrix::index(int x, int y) {
-    return matrix::tab[convert(x, y, matrix::size_x)];
+    if (matrix::size_l > convert(x, y, matrix::size_x)) {
+        return matrix::tab[convert(x, y, matrix::size_x)];
+    } else {
+        std::cout <<"!!!!"<< convert(x,y,matrix::size_x) << " is out of index range !!!!!";
+        throw "badd memory index";
+        return 0;
+    }
 }
 
 void matrix::apply_function(double (*func)(double)) {
@@ -22,7 +29,7 @@ void matrix::apply_function(double (*func)(double)) {
         matrix::tab[i] = func(matrix::tab[i]);
     }
 }
-void matrix::show() { 
+void matrix::show() {
     for (int i = 0; i < matrix::size_x * 2 + 1; i++) {
         std::cout << "-";
     }
@@ -66,12 +73,14 @@ void matrix::init(double *tab, int size) {
 
 matrix multiply(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
-    // TODO przepisane od drabika nie sprawdzone czy nie zrobilem bledu przy przepisywaniu
+    // TODO przepisane od drabika nie sprawdzone czy nie zrobilem bledu przy
+    // przepisywaniu
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_x; y++) {
             for (int z = 0; z < b.size_x; z++) {
-                //std::cout << convert(x, z, a.size_x * a.size_y) << std::endl;
-                wynik.tab[convert(x, y, a.size_x )] +=  a.index(x,z) * b.index(z,y);
+                // std::cout << convert(x, z, a.size_x * a.size_y) << std::endl;
+                wynik.tab[convert(x, y, a.size_x)] +=
+                    a.index(x, z) * b.index(z, y);
             }
         }
     }
