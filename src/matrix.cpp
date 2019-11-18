@@ -45,7 +45,7 @@ void matrix::show() {
     std::cout << std::endl;
 }
 /*
-Przeciazenie operatorw dodawania i odejmowania 
+Przeciazenie operatorw dodawania i odejmowania
 
 int matrix::operator *(const int& adressX,const int& adressY){
   return adressY * matrix::size_x + adressX;
@@ -71,7 +71,7 @@ void matrix::init(double *tab, int size) {
     }
 }
 
-//TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor
+// TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor
 matrix multiply(matrix a, matrix b) {
     matrix wynik(a.size_x, a.size_y);
     for (int x = 0; x < a.size_x; x++) {

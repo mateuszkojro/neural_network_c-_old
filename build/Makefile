@@ -204,6 +204,33 @@ src/matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/src/matrix.cpp.s
 .PHONY : src/matrix.cpp.s
 
+src/net.o: src/net.cpp.o
+
+.PHONY : src/net.o
+
+# target to build an object file
+src/net.cpp.o:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/src/net.cpp.o
+.PHONY : src/net.cpp.o
+
+src/net.i: src/net.cpp.i
+
+.PHONY : src/net.i
+
+# target to preprocess a source file
+src/net.cpp.i:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/src/net.cpp.i
+.PHONY : src/net.cpp.i
+
+src/net.s: src/net.cpp.s
+
+.PHONY : src/net.s
+
+# target to generate assembly for a file
+src/net.cpp.s:
+	$(MAKE) -f CMakeFiles/neural_network_c++.dir/build.make CMakeFiles/neural_network_c++.dir/src/net.cpp.s
+.PHONY : src/net.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/matrix.o"
 	@echo "... src/matrix.i"
 	@echo "... src/matrix.s"
+	@echo "... src/net.o"
+	@echo "... src/net.i"
+	@echo "... src/net.s"
 .PHONY : help
 
 
