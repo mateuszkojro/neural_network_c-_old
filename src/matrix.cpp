@@ -54,7 +54,8 @@ int matrix::operator *(const int& adressX,const int& adressY){
 double matrix::operator[](int adress) { return matrix::tab[adress]; }
 
 matrix add(matrix a, matrix b) {
-    matrix wynik(a.size_x, a.size_y);
+    matrix wynik;
+    wynik.init(a.size_x, a.size_y);
 
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
@@ -66,7 +67,8 @@ matrix add(matrix a, matrix b) {
 }
 
 matrix sub(matrix a ,matrix b){
-        matrix wynik(a.size_x, a.size_y);
+        matrix wynik;
+        wynik.init(a.size_x, a.size_y);
 
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
@@ -87,7 +89,8 @@ void matrix::init(int x, int y) {
 
 // TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor
 matrix multiply(matrix a, matrix b) {
-    matrix wynik(a.size_x, a.size_y);
+    matrix wynik;
+    wynik.init(a.size_x, a.size_y);
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_x; y++) {
             for (int z = 0; z < b.size_x; z++) {

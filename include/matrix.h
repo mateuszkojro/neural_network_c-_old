@@ -25,9 +25,6 @@ class matrix {
 
     }
     #endif
-    ~matrix() {
-        // delete [] tab;
-    }
 
   private:
 };

@@ -3,7 +3,7 @@
 
 class net {
   public:
-    net(int __n_layers, int __n_neurons, matrix *__input) {
+    net(int __n_layers, int __n_neurons, matrix __input) {
 
         // FIXME jak zrobic dynamiczne tablice z wartosciami innymi niz default
         // constructor rozwiazanie to przerobienie konstruktora na funckcje init
@@ -29,7 +29,7 @@ class net {
 
     double avg_error;
     
-    matrix *input;
+    matrix input;
     matrix *neurons;
     matrix *errors;
     matrix *weights;

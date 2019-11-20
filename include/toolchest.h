@@ -32,7 +32,7 @@ void fill_random_double(t *tab,int size){
 
 
 
-double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
+//double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
 
 
 } // namespace toolchest

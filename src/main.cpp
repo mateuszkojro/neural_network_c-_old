@@ -24,7 +24,16 @@ int main() {
     c = multiply(a, b);
     #endif 
 
-    net siec();
+    net siec(3,3,a);
+    for (int i = 0 ; i < 100;i++){
+        siec.feed_forward();
+        siec.back_propagade();
+        siec.guess().show();
+
+    }
+
+
+
 
     }
 
