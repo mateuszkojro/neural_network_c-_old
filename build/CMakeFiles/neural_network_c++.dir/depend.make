@@ -6,7 +6,6 @@ CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o: ../lib/simple.h
 
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../include/matrix.h
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../include/net.h
-CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../include/thread_simple.h
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../include/toolchest.h
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../lib/simple.h
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../src/main.cpp

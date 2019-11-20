@@ -14,14 +14,6 @@ deque
 matrix.h
 ../include/matrix.h
 
-../include/thread_simple.h
-thread
--
-iostream
--
-deque
--
-
 ../include/toolchest.h
 cmath
 -
@@ -47,6 +39,10 @@ net.h
 /home/mateusz/workspace/neural_network_c++/src/net.h
 iostream
 -
-thread_simple.h
-/home/mateusz/workspace/neural_network_c++/src/thread_simple.h
+
+/home/mateusz/workspace/neural_network_c++/src/net.cpp
+net.h
+/home/mateusz/workspace/neural_network_c++/src/net.h
+toolchest.h
+/home/mateusz/workspace/neural_network_c++/src/toolchest.h
 

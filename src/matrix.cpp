@@ -77,10 +77,12 @@ matrix sub(matrix a ,matrix b){
     return wynik;
 }
 
-void matrix::init(double *tab, int size) {
-    for (int i = 0; i < size; i++) {
-        matrix::tab[i] = tab[i];
-    }
+void matrix::init(int x, int y) {
+
+        size_x = x;
+        size_y = y;
+        size_l = x * y;
+        tab = new double[x * y];
 }
 
 // TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor

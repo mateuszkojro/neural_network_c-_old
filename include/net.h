@@ -6,11 +6,18 @@ class net {
     net(int __n_layers, int __n_neurons, matrix *__input) {
 
         // FIXME jak zrobic dynamiczne tablice z wartosciami innymi niz default
-        // constructor
-        matrix neurons = new matrix(n_neurons, 1)[n_layers];
-        matrix weights = new matrix(n_neurons, n_neurons)[n_layers];
-        matrix biases = new matrix(n_neurons, n_neurons)[n_layers];
-        matrix errors = new matrix(n_neurons,1)[1];
+        // constructor rozwiazanie to przerobienie konstruktora na funckcje init
+        matrix neurons[n_layers];
+        matrix weights[n_layers];
+        matrix biases[n_layers];
+        matrix errors[1];
+
+      for (int i = 0; i < n_layers;i++){
+        neurons[i].init(n_layers,1);
+        weights[i].init(n_layers,n_layers);
+        biases[i].init(n_layers,n_layers);
+      }
+      errors[1].init(n_layers,1);
 
         n_layers = __n_layers;
         n_neurons = __n_neurons;
