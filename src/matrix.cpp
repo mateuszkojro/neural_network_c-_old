@@ -65,6 +65,18 @@ matrix add(matrix a, matrix b) {
     return wynik;
 }
 
+matrix sub(matrix a ,matrix b){
+        matrix wynik(a.size_x, a.size_y);
+
+    for (int x = 0; x < a.size_x; x++) {
+        for (int y = 0; y < a.size_y; y++) {
+            wynik.tab[convert(x, y, a.size_x)] = a.index(x, y) - b.index(x, y);
+        }
+    }
+
+    return wynik;
+}
+
 void matrix::init(double *tab, int size) {
     for (int i = 0; i < size; i++) {
         matrix::tab[i] = tab[i];
@@ -84,3 +96,5 @@ matrix multiply(matrix a, matrix b) {
     }
     return wynik;
 }
+
+

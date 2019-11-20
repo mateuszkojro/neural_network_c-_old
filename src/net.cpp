@@ -11,17 +11,31 @@ void net::feed_forward() {
 
 void net::back_propagade() {}
 
-matrix net::guess() {}
+matrix net::guess() {
 
-matrix net::calculate_error() {}
+    net::feed_forward();
+    
+    return net::neurons[n_layers - 1];
+}
 
 
 
-void net::init(){
-        for (int i = 0; i < n_layers; ++i) {
+void net::calculate_error() {
+
+    net::errors[net::n_layers - 1] = sub(net::expected[i], net::guess());
+
+    for (int i = n_layers-1; i > 0; i++) {
+        //FIXME nie jestem pewny wspolczynnikow 
+        net::errors[i-1] = multiply(net::errors[i],net::weights[i-1]);
+    
+    }
+}
+
+
+void net::init() {
+    for (int i = 0; i < n_layers; ++i) {
         toolchest::fill_random_int(net::neurons[i].tab, size * size);
         toolchest::fill_random_double(net::weights[i].tab, size * size);
-        toolchest::fill_random_int(net::biases[i].tab,);
+        toolchest::fill_random_int(net::biases[i].tab, );
     }
-
 }
