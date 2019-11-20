@@ -9,7 +9,20 @@ void net::feed_forward() {
     }
 }
 
-void net::back_propagade() {}
+double coeficient_function(double x){
+
+    return x *0.05;
+
+}
+
+void net::back_propagade() {
+    for(int i = 0; i < n_layers;i++){
+
+        net::weights[i] = sub(net::weights[i],net::errors[i]);
+        net::weights[i].apply_function(coeficient_function);
+
+    }
+}
 
 matrix net::guess() {
 
