@@ -66,9 +66,9 @@ matrix add(matrix a, matrix b) {
     return wynik;
 }
 
-matrix sub(matrix a ,matrix b){
-        matrix wynik;
-        wynik.init(a.size_x, a.size_y);
+matrix sub(matrix a, matrix b) {
+    matrix wynik;
+    wynik.init(a.size_x, a.size_y);
 
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
@@ -81,25 +81,37 @@ matrix sub(matrix a ,matrix b){
 
 void matrix::init(int x, int y) {
 
-        size_x = x;
-        size_y = y;
-        size_l = x * y;
-        tab = new double[x * y];
+    size_x = x;
+    size_y = y;
+    size_l = x * y;
+    tab = new double[x * y];
 }
 
 // TODO sprawdzic czy odpowiednie paramtery do mnozenie razy wektor
 matrix multiply(matrix a, matrix b) {
+
     matrix wynik;
+#if 0 
+
     wynik.init(a.size_x, a.size_y);
     for (int x = 0; x < a.size_x; x++) {
-        for (int y = 0; y < a.size_x; y++) {
-            for (int z = 0; z < b.size_x; z++) {
+        for (int y = 0; y < b.size_y; y++) {
+            for (int z = 0; z < a.size_y; z++) {
                 wynik.tab[convert(x, y, a.size_x)] +=
                     a.index(x, z) * b.index(z, y);
             }
         }
     }
+
+#endif
+
+    for (int x = 0; x < a.size_x; x++) {
+        for (int y = 0; y < a.size_y; y++) {
+            for (int z = 0; z < b.size_y; z++) {
+                std::cout << x << " " << y << " " << z << std::endl;
+            }
+        }
+    }
+
     return wynik;
 }
-
-

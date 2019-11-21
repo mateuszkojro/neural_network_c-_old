@@ -11,12 +11,7 @@ int main() {
     const int size = 3;
 
     matrix a;
-    matrix b;
-    matrix c;
 
-     
-    
-    
     #if 0
     toolchest::fill_random_double(a.tab, size * size);
     toolchest::fill_random_double(b.tab, size * size);
