@@ -53,3 +53,5 @@ void net::init() {
         toolchest::fill_random_int(net::biases[i].tab,n_neurons );
     }
 }
+
+moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje moze nie moze tak koniec kropka koniec nic sie nie dzieje koniec nic a nic moze nie moze tak koniec nic sie nie dzieje 

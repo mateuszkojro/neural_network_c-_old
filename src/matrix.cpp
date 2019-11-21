@@ -91,6 +91,7 @@ void matrix::init(int x, int y) {
 matrix multiply(matrix a, matrix b) {
 
     matrix wynik;
+    wynik.init(a.size_x, a.size_y);
 #if 0 
 
     wynik.init(a.size_x, a.size_y);
