@@ -1,12 +1,15 @@
 #pragma once
 #include "matrix.h"
+#include <string>
 
 class net {
   public:
     net(int __n_layers, int __n_neurons, matrix __input) {
 
-        // FIXME jak zrobic dynamiczne tablice z wartosciami innymi niz default
-        // constructor rozwiazanie to przerobienie konstruktora na funckcje init
+        n_layers = __n_layers;
+        n_neurons = __n_neurons;
+        input = __input;
+
         matrix neurons[__n_layers];
         matrix weights[__n_layers];
         matrix biases[__n_layers];
@@ -19,9 +22,7 @@ class net {
       }
       errors[0].init(n_layers,1);
 
-        n_layers = __n_layers;
-        n_neurons = __n_neurons;
-        input = __input;
+
 
     }
     int n_layers;
@@ -43,7 +44,7 @@ class net {
     void back_propagade();
     void calculate_error();
     void extract_net();
-    void inport_net();
+    void import_net(std::string name);
 
 };
 

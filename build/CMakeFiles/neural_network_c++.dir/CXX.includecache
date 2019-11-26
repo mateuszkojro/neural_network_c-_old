@@ -13,6 +13,8 @@ deque
 ../include/net.h
 matrix.h
 ../include/matrix.h
+string
+-
 
 ../include/toolchest.h
 cmath
@@ -30,9 +32,13 @@ ctime
 iostream
 -
 
-/home/mateusz/workspace/neural_network_c++/src/net.cpp
-net.h
-/home/mateusz/workspace/neural_network_c++/src/net.h
+/home/mateusz/workspace/neural_network_c++/src/main.cpp
+matrix.h
+/home/mateusz/workspace/neural_network_c++/src/matrix.h
 toolchest.h
 /home/mateusz/workspace/neural_network_c++/src/toolchest.h
+net.h
+/home/mateusz/workspace/neural_network_c++/src/net.h
+iostream
+-
 

@@ -1,12 +1,13 @@
 #include "net.h"
 #include "toolchest.h"
+#include <fstream>
 
 double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
 void net::feed_forward() {
     for (int i = 1; i < n_layers; ++i) {
-        net::neurons[i] = multiply(net::weights[i - 1], net::neurons[i - 1]);
-        net::neurons[i] = add(net::biases[i - 1], net::neurons[i - 1]);
-        net::neurons[i].apply_function(sigmoid);
+       // net::neurons[i] = multiply(net::weights[i - 1], net::neurons[i - 1]);
+        //net::neurons[i] = add(net::biases[i - 1], net::neurons[i - 1]);
+        //net::neurons[i].apply_function(sigmoid);
     }
 }
 
@@ -52,5 +53,17 @@ void net::init() {
         toolchest::fill_random_double(net::weights[i].tab, n_neurons * n_neurons);
         toolchest::fill_random_int(net::biases[i].tab,n_neurons );
     }
+}
+
+
+void net::import_net(std::string name){
+    
+    std::fstream p;
+    p.open(name,std::ios::out);
+
+    //Pierwsza linia to rozmiary 
+    //kolejne to kazda linia przecinek kazdej warstwy 
+
+
 }
 

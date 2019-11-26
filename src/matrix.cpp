@@ -116,3 +116,15 @@ matrix multiply(matrix a, matrix b) {
 
     return wynik;
 }
+
+matrix multiply_vector(matrix vector ,matrix b){
+    matrix wynik;
+    wynik.init(vector.size_x,1);
+
+    for(int x =0;x < a ;x++){
+        for (int y = 0; y < a;y++){
+                
+                wynik.tab[convert(x, 1, vector.size_x)]  += vector.index(x,1) * b.index(y,x);
+        }
+    }
+}

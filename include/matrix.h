@@ -7,7 +7,7 @@ class matrix {
     int size_y;
     int size_l;
     double *tab;
-
+    
     void show();
     int adress(int x, int y);
     double index(int x, int y);
