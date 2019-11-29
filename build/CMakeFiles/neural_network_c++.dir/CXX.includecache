@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 ../include/matrix.h
+vector.h
+../include/vector.h
 deque
 -
 
@@ -15,12 +17,18 @@ matrix.h
 ../include/matrix.h
 string
 -
+vector.h
+../include/vector.h
 
 ../include/toolchest.h
 cmath
 -
 simple.h
 ../include/simple.h
+
+../include/vector.h
+matrix.h
+../include/matrix.h
 
 ../lib/simple.h
 chrono
@@ -41,4 +49,30 @@ net.h
 /home/mateusz/workspace/neural_network_c++/src/net.h
 iostream
 -
+
+/home/mateusz/workspace/neural_network_c++/src/matrix.cpp
+matrix.h
+/home/mateusz/workspace/neural_network_c++/src/matrix.h
+vector.h
+/home/mateusz/workspace/neural_network_c++/src/vector.h
+cmath
+-
+exception
+-
+iomanip
+-
+iostream
+-
+
+/home/mateusz/workspace/neural_network_c++/src/net.cpp
+net.h
+/home/mateusz/workspace/neural_network_c++/src/net.h
+toolchest.h
+/home/mateusz/workspace/neural_network_c++/src/toolchest.h
+fstream
+-
+matrix.h
+/home/mateusz/workspace/neural_network_c++/src/matrix.h
+
+/home/mateusz/workspace/neural_network_c++/src/vector.cpp
 

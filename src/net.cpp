@@ -1,6 +1,7 @@
 #include "net.h"
 #include "toolchest.h"
 #include <fstream>
+#include "matrix.h"
 
 double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
 void net::feed_forward() {
@@ -26,7 +27,7 @@ void net::back_propagade() {
     }
 }
 
-matrix net::guess() {
+vector net::guess() {
 
     net::feed_forward();
     
@@ -41,7 +42,7 @@ void net::calculate_error() {
 
     for (int i = n_layers-1; i > 0; i++) {
         //FIXME nie jestem pewny wspolczynnikow 
-        net::errors[i-1] = multiply(net::errors[i],net::weights[i-1]);
+        net::errors[i-1] = multiply_vector(net::errors[i],net::weights[i-1]);
     
     }
 }

@@ -1,4 +1,5 @@
 #include "matrix.h"
+#include "vector.h"
 #include <cmath>
 #include <exception>
 #include <iomanip>
@@ -6,6 +7,7 @@
 
 
 int convert(int x, int y, int size_x) { return (y * size_x) + x; }
+
 
 // TODO adress jest zle zdeklarowny i zawsze zwraca 0
 int adress(int x, int y) { return 0; }
@@ -79,6 +81,15 @@ matrix sub(matrix a, matrix b) {
     return wynik;
 }
 
+vector sub(vector a, vector b) {
+    vector wynik;
+    wynik.init(wynik.size_x);
+    for (int x = 0; x < a.size_x; x++) {
+            wynik.tab[x] = a.index(x) - b.index(x);
+    }
+    return wynik;
+}
+
 void matrix::init(int x, int y) {
 
     size_x = x;
@@ -117,14 +128,15 @@ matrix multiply(matrix a, matrix b) {
     return wynik;
 }
 
-matrix multiply_vector(matrix vector ,matrix b){
-    matrix wynik;
-    wynik.init(vector.size_x,1);
+vector multiply_vector(vector a, matrix b) {
+    vector wynik;
+    wynik.init(a.size_x);
 
-    for(int x =0;x < a ;x++){
-        for (int y = 0; y < a;y++){
-                
-                wynik.tab[convert(x, 1, vector.size_x)]  += vector.index(x,1) * b.index(y,x);
+    for (int x = 0; x < a.size_x; x++) {
+        for (int y = 0; y < a.size_x; y++) {
+
+            wynik.tab[convert(x, 1, a.size_x)] += a.index(x) * b.index(y, x);
         }
     }
+    return wynik;
 }

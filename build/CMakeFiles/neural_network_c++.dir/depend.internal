@@ -8,14 +8,19 @@ CMakeFiles/neural_network_c++.dir/src/main.cpp.o
  ../include/matrix.h
  ../include/net.h
  ../include/toolchest.h
+ ../include/vector.h
  ../lib/simple.h
  /home/mateusz/workspace/neural_network_c++/src/main.cpp
 CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o
  ../include/matrix.h
+ ../include/vector.h
  /home/mateusz/workspace/neural_network_c++/src/matrix.cpp
 CMakeFiles/neural_network_c++.dir/src/net.cpp.o
  ../include/matrix.h
  ../include/net.h
  ../include/toolchest.h
+ ../include/vector.h
  ../lib/simple.h
  /home/mateusz/workspace/neural_network_c++/src/net.cpp
+CMakeFiles/neural_network_c++.dir/src/vector.cpp.o
+ /home/mateusz/workspace/neural_network_c++/src/vector.cpp

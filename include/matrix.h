@@ -1,4 +1,5 @@
 #pragma once
+#include "vector.h"
 #include <deque>
 
 class matrix {
@@ -32,3 +33,6 @@ class matrix {
 matrix add(matrix a, matrix b);
 matrix sub(matrix a, matrix b);
 matrix multiply(matrix a, matrix b);
+vector multiply_vector(vector a,matrix b);
+
+

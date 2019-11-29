@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mateusz/workspace/neural_network_c++/src/main.cpp" "/home/mateusz/workspace/neural_network_c++/build/CMakeFiles/neural_network_c++.dir/src/main.cpp.o"
   "/home/mateusz/workspace/neural_network_c++/src/matrix.cpp" "/home/mateusz/workspace/neural_network_c++/build/CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o"
   "/home/mateusz/workspace/neural_network_c++/src/net.cpp" "/home/mateusz/workspace/neural_network_c++/build/CMakeFiles/neural_network_c++.dir/src/net.cpp.o"
+  "/home/mateusz/workspace/neural_network_c++/src/vector.cpp" "/home/mateusz/workspace/neural_network_c++/build/CMakeFiles/neural_network_c++.dir/src/vector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

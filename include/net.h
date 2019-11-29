@@ -1,6 +1,7 @@
 #pragma once
 #include "matrix.h"
 #include <string>
+#include "vector.h"
 
 class net {
   public:
@@ -10,17 +11,17 @@ class net {
         n_neurons = __n_neurons;
         input = __input;
 
-        matrix neurons[__n_layers];
+        vector neurons[__n_layers];
         matrix weights[__n_layers];
         matrix biases[__n_layers];
-        matrix errors[1];
+        vector errors[1];
 
       for (int i = 0; i < __n_layers;i++){
-        neurons[i].init(__n_layers,1);
+        neurons[i].init(__n_layers);
         weights[i].init(__n_layers,__n_layers);
         biases[i].init(__n_layers,__n_layers);
       }
-      errors[0].init(n_layers,1);
+      errors[0].init(n_layers);
 
 
 
@@ -31,13 +32,13 @@ class net {
     double avg_error;
     
     matrix input;
-    matrix *neurons;
-    matrix *errors;
+    vector *neurons;
+    vector *errors;
     matrix *weights;
     matrix *biases;
-    matrix *expected;
+    vector *expected;
 
-    matrix guess();
+    vector guess();
     
     void init();
     void feed_forward();
