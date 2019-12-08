@@ -14,10 +14,10 @@ int adress(int x, int y) { return 0; }
 
 // TODO poprawic wyrzucanay wyjatek
 double matrix::index(int x, int y) {
-    if (matrix::size_l > convert(x, y, matrix::size_x)) {
-        return matrix::tab[convert(x, y, matrix::size_x)];
+    if (matrix::size_l > convert_addr(x, y, matrix::size_x)) {
+        return matrix::tab[convert_addr(x, y, matrix::size_x)];
     } else {
-        std::cout << "!!!!" << convert(x, y, matrix::size_x)
+        std::cout << "!!!!" << convert_addr(x, y, matrix::size_x)
                   << " is out of index range !!!!!";
         throw "badd memory index";
         return 0;
@@ -60,7 +60,7 @@ matrix add(matrix a, matrix b) {
 
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
-            wynik.tab[convert(x, y, a.size_x)] = a.index(x, y) + b.index(x, y);
+            wynik.tab[convert_addr(x, y, a.size_x)] = a.index(x, y) + b.index(x, y);
         }
     }
 
@@ -73,7 +73,7 @@ matrix sub(matrix a, matrix b) {
 
     for (int x = 0; x < a.size_x; x++) {
         for (int y = 0; y < a.size_y; y++) {
-            wynik.tab[convert(x, y, a.size_x)] = a.index(x, y) - b.index(x, y);
+            wynik.tab[convert_addr(x, y, a.size_x)] = a.index(x, y) - b.index(x, y);
         }
     }
 
@@ -121,3 +121,4 @@ matrix multiply(matrix a, matrix b) {
 }
 
 
+int convert_addr(int x, int y, int size_x) { return (y * size_x) + x; }

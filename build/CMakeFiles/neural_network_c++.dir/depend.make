@@ -21,5 +21,7 @@ CMakeFiles/neural_network_c++.dir/src/net.cpp.o: ../include/vector.h
 CMakeFiles/neural_network_c++.dir/src/net.cpp.o: ../lib/simple.h
 CMakeFiles/neural_network_c++.dir/src/net.cpp.o: ../src/net.cpp
 
+CMakeFiles/neural_network_c++.dir/src/vector.cpp.o: ../include/matrix.h
+CMakeFiles/neural_network_c++.dir/src/vector.cpp.o: ../include/vector.h
 CMakeFiles/neural_network_c++.dir/src/vector.cpp.o: ../src/vector.cpp
 

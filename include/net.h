@@ -20,10 +20,10 @@ class net {
         vector errors[__n_layers];
 
       for (int i = 0; i < __n_layers;i++){
-        neurons[i].init(__n_layers);
-        weights[i].init(__n_layers,__n_layers);
-        biases[i].init(__n_layers,__n_layers);
-        errors[i].init(n_layers);
+        neurons[i].init(__n_neurons);
+        weights[i].init(__n_neurons,__n_neurons);
+        biases[i].init(__n_neurons,__n_neurons);
+        errors[i].init(__n_neurons);
       }
       
 

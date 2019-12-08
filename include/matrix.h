@@ -1,7 +1,8 @@
 #pragma once
 #include <deque>
 
-int convert(int ,int ,int );
+
+int convert_addr(int ,int ,int );
 
 class matrix {
   public:
@@ -34,6 +35,6 @@ class matrix {
 matrix add(matrix a, matrix b);
 matrix sub(matrix a, matrix b);
 matrix multiply(matrix a, matrix b);
-int convert(int x, int y, int size_x) { return (y * size_x) + x; }
+int convert_addr(int x, int y, int size_x);
 
 
