@@ -1,12 +1,13 @@
+#include <fstream>
 #include "net.h"
 #include "toolchest.h"
-#include <fstream>
 #include "matrix.h"
+#include "vector.h"
 
 double sigmoid(double x) { return 1 / (1 + exp(-1 * x)); }
 void net::feed_forward() {
     for (int i = 1; i < n_layers; ++i) {
-       // net::neurons[i] = multiply(net::weights[i - 1], net::neurons[i - 1]);
+       net::neurons[i] = multiply_vector( net::neurons[i - 1],net::weights[i - 1]);
         //net::neurons[i] = add(net::biases[i - 1], net::neurons[i - 1]);
         //net::neurons[i].apply_function(sigmoid);
     }
@@ -19,10 +20,13 @@ double coeficient_function(double x){
 }
 
 void net::back_propagade() {
-    for(int i = 0; i < n_layers;i++){
+    for(int i = 0; i < n_layers-1;i++){
+//FIXME nie wiem jakie odejmowanie tam powinno byvvector sub(vector a, vector b) {
 
-        net::weights[i] = sub(net::weights[i],net::errors[i]);
+        //net::weights[i] = sub(net::weights[i],net::errors[i]);
         net::weights[i].apply_function(coeficient_function);
+        //net::neurons[i] = multiply_vector()
+        
 
     }
 }

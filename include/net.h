@@ -1,7 +1,10 @@
 #pragma once
-#include "matrix.h"
+
 #include <string>
+
+#include "matrix.h"
 #include "vector.h"
+
 
 class net {
   public:
@@ -14,14 +17,15 @@ class net {
         vector neurons[__n_layers];
         matrix weights[__n_layers];
         matrix biases[__n_layers];
-        vector errors[1];
+        vector errors[__n_layers];
 
       for (int i = 0; i < __n_layers;i++){
         neurons[i].init(__n_layers);
         weights[i].init(__n_layers,__n_layers);
         biases[i].init(__n_layers,__n_layers);
+        errors[i].init(n_layers);
       }
-      errors[0].init(n_layers);
+      
 
 
 
