@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mateusz/workspace/neural_network_c++
+CMAKE_SOURCE_DIR = /home/filip/workspace/neural_network_c-
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mateusz/workspace/neural_network_c++/build
+CMAKE_BINARY_DIR = /home/filip/workspace/neural_network_c-/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/neural_network_c++.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/neural_network_c++.dir/flags.make
 
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: CMakeFiles/neural_network_c++.dir/flags.make
 CMakeFiles/neural_network_c++.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusz/workspace/neural_network_c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/neural_network_c++.dir/src/main.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/main.cpp.o -c /home/mateusz/workspace/neural_network_c++/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filip/workspace/neural_network_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/neural_network_c++.dir/src/main.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/main.cpp.o -c /home/filip/workspace/neural_network_c-/src/main.cpp
 
 CMakeFiles/neural_network_c++.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neural_network_c++.dir/src/main.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mateusz/workspace/neural_network_c++/src/main.cpp > CMakeFiles/neural_network_c++.dir/src/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filip/workspace/neural_network_c-/src/main.cpp > CMakeFiles/neural_network_c++.dir/src/main.cpp.i
 
 CMakeFiles/neural_network_c++.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neural_network_c++.dir/src/main.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mateusz/workspace/neural_network_c++/src/main.cpp -o CMakeFiles/neural_network_c++.dir/src/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filip/workspace/neural_network_c-/src/main.cpp -o CMakeFiles/neural_network_c++.dir/src/main.cpp.s
 
 CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o: CMakeFiles/neural_network_c++.dir/flags.make
 CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o: ../src/matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusz/workspace/neural_network_c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o -c /home/mateusz/workspace/neural_network_c++/src/matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filip/workspace/neural_network_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.o -c /home/filip/workspace/neural_network_c-/src/matrix.cpp
 
 CMakeFiles/neural_network_c++.dir/src/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neural_network_c++.dir/src/matrix.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mateusz/workspace/neural_network_c++/src/matrix.cpp > CMakeFiles/neural_network_c++.dir/src/matrix.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filip/workspace/neural_network_c-/src/matrix.cpp > CMakeFiles/neural_network_c++.dir/src/matrix.cpp.i
 
 CMakeFiles/neural_network_c++.dir/src/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neural_network_c++.dir/src/matrix.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mateusz/workspace/neural_network_c++/src/matrix.cpp -o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filip/workspace/neural_network_c-/src/matrix.cpp -o CMakeFiles/neural_network_c++.dir/src/matrix.cpp.s
 
 CMakeFiles/neural_network_c++.dir/src/net.cpp.o: CMakeFiles/neural_network_c++.dir/flags.make
 CMakeFiles/neural_network_c++.dir/src/net.cpp.o: ../src/net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusz/workspace/neural_network_c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/neural_network_c++.dir/src/net.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/net.cpp.o -c /home/mateusz/workspace/neural_network_c++/src/net.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filip/workspace/neural_network_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/neural_network_c++.dir/src/net.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/src/net.cpp.o -c /home/filip/workspace/neural_network_c-/src/net.cpp
 
 CMakeFiles/neural_network_c++.dir/src/net.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neural_network_c++.dir/src/net.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mateusz/workspace/neural_network_c++/src/net.cpp > CMakeFiles/neural_network_c++.dir/src/net.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filip/workspace/neural_network_c-/src/net.cpp > CMakeFiles/neural_network_c++.dir/src/net.cpp.i
 
 CMakeFiles/neural_network_c++.dir/src/net.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neural_network_c++.dir/src/net.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mateusz/workspace/neural_network_c++/src/net.cpp -o CMakeFiles/neural_network_c++.dir/src/net.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filip/workspace/neural_network_c-/src/net.cpp -o CMakeFiles/neural_network_c++.dir/src/net.cpp.s
 
 CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o: CMakeFiles/neural_network_c++.dir/flags.make
 CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o: ../lib/simple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusz/workspace/neural_network_c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o -c /home/mateusz/workspace/neural_network_c++/lib/simple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/filip/workspace/neural_network_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o -c /home/filip/workspace/neural_network_c-/lib/simple.cpp
 
 CMakeFiles/neural_network_c++.dir/lib/simple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/neural_network_c++.dir/lib/simple.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mateusz/workspace/neural_network_c++/lib/simple.cpp > CMakeFiles/neural_network_c++.dir/lib/simple.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/filip/workspace/neural_network_c-/lib/simple.cpp > CMakeFiles/neural_network_c++.dir/lib/simple.cpp.i
 
 CMakeFiles/neural_network_c++.dir/lib/simple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/neural_network_c++.dir/lib/simple.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mateusz/workspace/neural_network_c++/lib/simple.cpp -o CMakeFiles/neural_network_c++.dir/lib/simple.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/filip/workspace/neural_network_c-/lib/simple.cpp -o CMakeFiles/neural_network_c++.dir/lib/simple.cpp.s
 
 # Object files for target neural_network_c++
 neural_network_c_______OBJECTS = \
@@ -125,7 +125,7 @@ neural_network_c++: CMakeFiles/neural_network_c++.dir/src/net.cpp.o
 neural_network_c++: CMakeFiles/neural_network_c++.dir/lib/simple.cpp.o
 neural_network_c++: CMakeFiles/neural_network_c++.dir/build.make
 neural_network_c++: CMakeFiles/neural_network_c++.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mateusz/workspace/neural_network_c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable neural_network_c++"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/filip/workspace/neural_network_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable neural_network_c++"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/neural_network_c++.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/neural_network_c++.dir/clean:
 .PHONY : CMakeFiles/neural_network_c++.dir/clean
 
 CMakeFiles/neural_network_c++.dir/depend:
-	cd /home/mateusz/workspace/neural_network_c++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mateusz/workspace/neural_network_c++ /home/mateusz/workspace/neural_network_c++ /home/mateusz/workspace/neural_network_c++/build /home/mateusz/workspace/neural_network_c++/build /home/mateusz/workspace/neural_network_c++/build/CMakeFiles/neural_network_c++.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/filip/workspace/neural_network_c-/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/filip/workspace/neural_network_c- /home/filip/workspace/neural_network_c- /home/filip/workspace/neural_network_c-/build /home/filip/workspace/neural_network_c-/build /home/filip/workspace/neural_network_c-/build/CMakeFiles/neural_network_c++.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/neural_network_c++.dir/depend
 
